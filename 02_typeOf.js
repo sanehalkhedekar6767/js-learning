@@ -48,7 +48,6 @@ console.log("Type of variable totalCount is:", typeofTotalCount);
 
 totalCount = 107;
 console.log("totalCount:", totalCount);
-
 typeofTotalCount = typeof totalCount;
 console.log("Type of variable totalCount is:", typeofTotalCount);
 
