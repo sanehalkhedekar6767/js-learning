@@ -1,9 +1,11 @@
-
+//Property-------
 
 console.log("========== length property ==================");
 var greet = "Good Morning";
 var totalChars = greet.length;   //property without ()
 console.log("Total no. of chars is:", totalChars);
+
+//Functions------
 
 console.log("========== charAt() ==================");
 var charAt0 = greet.charAt(0);
@@ -30,4 +32,41 @@ console.log("========== concat() ==================");
 var firstName = "Sanehal";
 var lastName = " Khedekar";
 var resultConcat = firstName.concat(lastName);
-console.log(resultConcat);
+console.log("Concat result is: ",resultConcat);
+
+console.log(`========== replace() ==================`);
+var greet = "Good Morning";
+//const afterReplace = greet.replace("Morning", "Afternoon");
+const afterReplace = greet.replace("M", "F");
+console.log(`After replace string is: ${afterReplace}`);
+
+console.log(`========== toUpperCase() ==================`);
+var greet = "Good Morning";
+var greetInUpperCase = greet.toUpperCase()
+console.log(`${greet} in upper case is: ${greetInUpperCase}`);
+
+console.log(`========== trim() ==================`);
+
+var greet = "   Good Morning   ";
+var len1 = greet.length;
+console.log(`${greet} it's length is: ${len1}`);
+
+var afterTrim = greet.trim();
+var len2 = afterTrim.length;
+//console.log(`After trim : ${afterTrim }`);
+console.log(`${afterTrim} it's length is: ${len2}`);
+console.log(`The difference in length after trimming is: ${len1 - len2}`);
+
+console.log(`========== include() ==================`);
+var greet = "Good Morning";
+var varInclude = greet.includes(`Morning`);
+console.log(`${varInclude}`);
+
+console.log(`========== slice(start, end) ==================`);
+var greet = "Good Morning";
+var afterSlice = greet.slice(2, 9);
+console.log(`After slicing string is : ${afterSlice}`);
+
+
+
+
