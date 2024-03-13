@@ -48,25 +48,66 @@ console.log(`${greet} in upper case is: ${greetInUpperCase}`);
 console.log(`========== trim() ==================`);
 
 var greet = "   Good Morning   ";
-var len1 = greet.length;
-console.log(`${greet} it's length is: ${len1}`);
+var lengthBeforeTrim = greet.length;
+console.log(`${greet} it's length is: ${lengthBeforeTrim}`);
 
 var afterTrim = greet.trim();
-var len2 = afterTrim.length;
+var lengthAfterTrim = afterTrim.length;
 //console.log(`After trim : ${afterTrim }`);
-console.log(`${afterTrim} it's length is: ${len2}`);
-console.log(`The difference in length after trimming is: ${len1 - len2}`);
+console.log(`${afterTrim} it's length is: ${lengthAfterTrim}`);
+console.log(`Total spaces removed is: ${lengthBeforeTrim-lengthAfterTrim}`);
 
-console.log(`========== include() ==================`);
+console.log(`========== includes() ==================`);
 var greet = "Good Morning";
-var varInclude = greet.includes(`Morning`);
-console.log(`${varInclude}`);
+var result = greet.includes("nin");
+console.log(`Is string ${greet} includes word or char 'nin': ${result}`);
 
-console.log(`========== slice(start, end) ==================`);
+var result = greet.includes("MoR");
+console.log(`Is string ${greet} includes word or char 'MoR': ${result}`);
+
+console.log(`========== search() ==================`);
 var greet = "Good Morning";
-var afterSlice = greet.slice(2, 9);
-console.log(`After slicing string is : ${afterSlice}`);
+var result = greet.search("Morning");
+console.log(`'Morning' is available at ${result}`);
+
+var result = greet.search("r");
+console.log(`'r' is available at ${result}`);
 
 
+console.log(`========== slice() ==================`);
+var greet = "Good Morning";
+var result = greet.slice(3, 10);
+console.log(`Slice is ${result}`);
+
+
+console.log(`========== split() ==================`);
+var greet = "Good Morning";
+var resultValue = greet.split(" ")
+console.log(resultValue);
+console.log(`Total words are: ${resultValue.length}`);
+
+console.log(`========== task ==================`);
+//Write a function to find a totalwords() with one argument
+//'I am Happy Buddy'
+//'I am learning JS the language of internet'
+// and this function should return the total number of words
+
+// Write a function with name totalWord() with one arguments
+//  "I am happy Buddy" 
+//  "I am learning JS the language of internet"
+// and this function should return the total numbers of words
+
+function totalWord(sentence){
+    var words = sentence.split(" ");
+    var totalWords = words.length;
+    return totalWords
+}
+var totalWords = totalWord("I am happy Buddy");
+console.log(`"I am happy Buddy". Total number of words is: ${totalWords}`);
+
+var totalWords = totalWord("I am learning JS the language of internet");
+console.log(`"I am learning JS the language of internet". Total number od words is: ${totalWords}`);
+
+console.log(`========== substr() ==================`);
 
 
