@@ -103,7 +103,7 @@ function totalWord(sentence){
     return totalWords
 }
 var totalWords = totalWord("I am happy Buddy");
-console.log(`"I am happy Buddy". Total number of words is: ${totalWords}`);
+// console.log(`"I am happy Buddy". Total number of words is: ${totalWords}`);
 
 var totalWords = totalWord("I am learning JS the language of internet");
 console.log(`"I am learning JS the language of internet". Total number od words is: ${totalWords}`);
