@@ -24,6 +24,7 @@ console.log(`--------- Modifying existing property ---------`);
 professor.age = 40;
 console.log(professor);
 
+console.log(`--------- Adding new certificate at index 2 ---------`); 
 professor.certificates.splice(2, 0, "Oracle Certified");
 
 const lastElement = professor.certificates[professor.certificates.length - 1];
