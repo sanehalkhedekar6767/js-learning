@@ -109,5 +109,6 @@ var totalWords = totalWord("I am learning JS the language of internet");
 console.log(`"I am learning JS the language of internet". Total number od words is: ${totalWords}`);
 
 console.log(`========== substr() ==================`);
+console.log(sentence.substring("2,10"));
 
 

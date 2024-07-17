@@ -21,7 +21,7 @@ function subtract(numOne, numTwo){
     console.log("======== subtraction ================");
     console.log("Arguments: ", numOne,numTwo );
     var result = numOne - numTwo;
-    return result;
+    return result;``
     console.log("hello i am dead and unreachabe code");
 }
 var returnValue = subtract(9, 4);
